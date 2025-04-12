@@ -2,3 +2,15 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+:root {
+    --main-color: #9356DC;
+    --second-color: #FF79DA;
+    --third-color: #99E2D0;
+    --background-color: #EAEAEA;
+
+}
+
+body{
+    background-color: var(--background-color)
+}

@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/cssOMF.css">
+    <link rel="stylesheet" href="./sass/sass.css">
 </head>
 
 <body>
     <div class="main-container">
         <header class="headOMF">
             <div class="logoOMF">
-                <img src="./ImagesOMF/logo/ohmyfood.png" alt="Logo du site Oh my Food">
+                <img src="./ImagesOMF/logo/ohmyfood@2x.svg" alt="Logo du site Oh my Food">
             </div>
             <div class="location">
                 <div class="iconlocation"><i class="fa-solid fa-location-dot"></i></div> Paris, Belleville
@@ -28,35 +28,38 @@
             <div class="title-nav">Réservez le menu qui vous convient</div>
             <div class="subtitle-nav">Découvrez des restaurants d’exception, sélectionnés par nos soins.</div>
             <div class="btn-nav">
-                <a href="#"><button class="explore">Explorer nos restaurants</button></a>
+                <a href="#section-restaurant-list"><button class="explore">Explorer nos restaurants</button></a>
             </div>
         </nav>
         <main class="main-wrap">
             <div class="operation-steps">
                 <div class="title-operation-steps">Fonctionnement</div>
                 <div class="all-steps">
-                    <div class="steps-section">
-                        <div class="number-steps">1</div>
-                        <div class="content-steps">
-                            <div class="icon-steps"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                            <div class="explication-steps">Choisissez un restaurant</div>
+                    <div class="steps-section content-steps">
+                        <div class="number-steps-background">
+                            <div class="number-white">1</div>
                         </div>
+                        <div class="icon-steps"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="explication-steps">Choisissez un restaurant</div>
                     </div>
-                    <div class="steps-section">
-                        <div class="number-steps">2</div>
-                        <div class="content-steps">
-                            <div class="icon-steps"><i class="fa-solid fa-list-ul"></i></div>
-                            <div class="explication-steps">Composez votre menu</div>
+                    <div class="steps-section content-steps">
+                        <div class="number-steps-background">
+                            <div class="number-white">2</div>
                         </div>
+                        <div class="icon-steps"><i class="fa-solid fa-list-ul"></i></div>
+                        <div class="explication-steps">Composez votre menu</div>
                     </div>
-                    <div class="steps-section">
-                        <div class="number-steps">3</div>
-                        <div class="content-steps">
-                            <div class="icon-steps--purple"><i class="fa-solid fa-store"></i></div>
-                            <div class="explication-steps">Dégustez au restaurant</div>
+                    <div class="steps-section content-steps">
+                        <div class="number-steps-background">
+                            <div class="number-white">3</div>
                         </div>
+                        <div class="icon-steps--purple"><i class="fa-solid fa-store"></i></div>
+                        <div class="explication-steps">Dégustez au restaurant</div>
                     </div>
                 </div>
+            </div>
+            <div class="restaurant-list">
+                <div id="section-restaurant-list" class="title-restaurant-list">Restaurants</div>
             </div>
         </main>
         <footer></footer>

@@ -19,11 +19,13 @@ body {
   color: #7E7E7E;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .main-container {
   width: 100%;
-}
-.main-container a {
-  text-decoration: none;
 }
 
 .headOMF .logoOMF {
@@ -77,6 +79,7 @@ body {
   font-size: 16px;
   border-radius: 30px;
 }
+
 .operation-steps {
   padding: 10px;
   background-color: white;
@@ -146,4 +149,105 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-}/*# sourceMappingURL=sass.css.map */
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-card .card-restaurant {
+  width: 340px;
+  height: 251px;
+  background-color: white;
+  position: relative;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.list-card .card-restaurant img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 340px;
+  height: 70%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.list-card .card-restaurant .new-restaurant {
+  background-color: var(--third-color);
+  color: #008766;
+  width: 80px;
+  height: 29px;
+  font-size: 14px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 15px;
+  bottom: 83%;
+}
+.list-card .card-restaurant .bottom-card {
+  display: flex;
+  padding: 15px;
+}
+.list-card .card-restaurant .bottom-card .txt-restaurant {
+  width: 70%;
+}
+.list-card .card-restaurant .bottom-card .txt-restaurant .title-restaurant {
+  font-size: 18px;
+  font-weight: bold;
+}
+.list-card .card-restaurant .bottom-card .txt-restaurant .subtitle-restaurant {
+  font-size: 17px;
+  font-weight: 300;
+}
+.list-card .card-restaurant .bottom-card .icon-restaurant {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.list-card .card-restaurant .bottom-card .icon-restaurant .fa-heart {
+  font-size: 25px;
+}
+
+.end-page-OMF {
+  background-color: #353535;
+  padding: 20px;
+}
+.end-page-OMF .txt-footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.end-page-OMF .txt-footer .title-footer {
+  font-family: Shrikhand;
+  font-size: 18px;
+}
+.end-page-OMF .txt-footer ul {
+  padding: 0px;
+}
+.end-page-OMF .txt-footer li {
+  list-style-type: none;
+  font-weight: 300;
+  margin: 5px;
+}
+.end-page-OMF .txt-footer .list-icon {
+  font-weight: 500;
+}
+.end-page-OMF .txt-footer .list-icon .fa-utensils {
+  color: white;
+  width: 11px;
+  height: 13px;
+  margin-right: 15px;
+}
+.end-page-OMF .txt-footer .list-icon .fa-handshake-angle {
+  color: white;
+  width: 11px;
+  height: 13px;
+  margin-right: 15px;
+}
+
+/****** Media queries ***********/
+/* Tablet */
+/* Laptop  */
+/* Laptop + *//*# sourceMappingURL=sass.css.map */

@@ -299,10 +299,23 @@ a {
 
 /****** Media queries ***********/
 
+/* phone */
+
+@media (max-width: 320px) {
+
+    .list-card {
+        .card-restaurant {
+            width: 280px;
+
+            & img {
+                width: 280px;
+            }
+        }
+    }
+}
 
 /* Tablet */
 @media (min-width: 768px) {
-
 
     .main-wrap {
         .operation-steps {
@@ -337,7 +350,16 @@ a {
     }
 }
 
-/* Laptop  */
+/* Laptop L */
+@media (min-width: 1024px) {
+
+    .section-list {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+
+/* Laptop L */
 @media (min-width: 1040px) {
 
 
@@ -353,8 +375,6 @@ a {
         }
 
     }
-
-
 
     .section-list {
         padding-left: 150px;

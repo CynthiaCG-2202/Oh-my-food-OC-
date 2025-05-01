@@ -68,11 +68,12 @@ a {
 .all-section-menu .all-menu .header-restaurant {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #f6f6f6;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   padding: 10px;
+  gap: 15px;
 }
 .all-section-menu .all-menu .header-restaurant .title-menu-restaurant {
   font-family: Shrikhand;
@@ -80,6 +81,31 @@ a {
 }
 .all-section-menu .all-menu .header-restaurant .icon-restaurant {
   font-size: 20px;
+}
+.all-section-menu .all-menu .header-restaurant .icon-restaurant .fa-heart {
+  transition: all 300ms ease;
+  position: relative;
+  display: inline-block;
+}
+.all-section-menu .all-menu .header-restaurant .icon-restaurant .fa-heart::after {
+  content: "\f004";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, var(--main-color), var(--second-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.all-section-menu .all-menu .header-restaurant .icon-restaurant .fa-heart:hover::after {
+  opacity: 1;
 }
 .all-section-menu .all-menu .content-menu {
   padding: 10px;

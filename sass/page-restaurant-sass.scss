@@ -55,7 +55,7 @@ a {
 
 .all-section-menu {
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,6 +70,9 @@ a {
         position: relative;
         top: -35px;
         width: 100%;
+        background-color: #f6f6f6;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
 
         .header-restaurant {
             display: flex;
@@ -162,6 +165,7 @@ a {
                 }
             }
         }
+
     }
 
 }
@@ -295,17 +299,11 @@ a {
 @media (min-width: 1040px) {
 
 
-    .steps-section {
-        flex-direction: row;
+    .all-section-menu {
 
-        .content-steps {
-            width: 322px;
-
-            .explication-steps {
-                font-size: 16px;
-            }
+        .all-menu {
+            width: 60%;
         }
-
     }
 
     .section-list {

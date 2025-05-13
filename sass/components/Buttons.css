@@ -19,7 +19,11 @@
   opacity: 0.85;
 }
 
-.btn-command {
+.btn-menu {
+  display: flex;
+  justify-content: center;
+}
+.btn-menu .btn-command {
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.089);
   width: 186px;
   height: 50px;
@@ -32,6 +36,6 @@
   border-radius: 30px;
   transition: opacity 300ms ease, background-color 300ms ease;
 }
-.btn-command:hover {
+.btn-menu .btn-command:hover {
   opacity: 0.85;
 }/*# sourceMappingURL=Buttons.css.map */

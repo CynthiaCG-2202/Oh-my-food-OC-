@@ -369,8 +369,15 @@
 body {
   margin: inherit;
   background-color: var(--background-color);
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
 }
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 .end-page-OMF {
   background-color: #353535;
   padding: 20px;
@@ -489,34 +496,85 @@ body {
   text-transform: uppercase;
   font-weight: 300;
   border-bottom: 4px solid #99E2D0;
-  width: 10%;
+  width: 5%;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.all-section-menu .all-menu .content-menu .section-menu .content-section-menu {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  background-color: white;
-  padding: 10px;
-  margin: 10px;
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check {
+  position: relative;
+  background: white;
   border-radius: 15px;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.089);
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
 }
-.all-section-menu .all-menu .content-menu .section-menu .content-section-menu .txt-food .name-food {
-  font-size: 18px;
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check .content-section-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+  align-items: flex-end;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check .content-section-menu .txt-food {
+  display: flex;
+  flex-direction: column;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check .content-section-menu .txt-food .name-food {
   font-weight: bold;
+  font-size: 1rem;
 }
-.all-section-menu .all-menu .content-menu .section-menu .content-section-menu .txt-food .food-content {
-  font-size: 15px;
-  font-weight: 300;
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check .content-section-menu .txt-food .food-content {
+  font-size: 0.9rem;
+  color: #666;
 }
-.all-section-menu .all-menu .content-menu .section-menu .content-section-menu .food-price {
-  color: #353535;
-  font-size: 15px;
-  font-weight: 700;
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check .content-section-menu .price-food {
+  font-weight: bold;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check .check-zone {
+  background-color: #99e2d0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  transition: right 0.3s ease;
+  z-index: 2;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check .check-zone .check {
+  font-size: 1.2rem;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check:hover .check-zone {
+  right: 0;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check:hover .price-food {
+  transform: translateX(-60px);
 }
 
+@media (min-width: 768px) {
+  .all-section-menu .all-menu .content-menu {
+    padding: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .all-section-menu .all-menu {
+    width: 70%;
+  }
+  .all-section-menu .all-menu .content-menu {
+    padding: 35px;
+  }
+}
 .btn-nav {
   margin: 15px;
 }
@@ -538,7 +596,11 @@ body {
   opacity: 0.85;
 }
 
-.btn-command {
+.btn-menu {
+  display: flex;
+  justify-content: center;
+}
+.btn-menu .btn-command {
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.089);
   width: 186px;
   height: 50px;
@@ -551,7 +613,7 @@ body {
   border-radius: 30px;
   transition: opacity 300ms ease, background-color 300ms ease;
 }
-.btn-command:hover {
+.btn-menu .btn-command:hover {
   opacity: 0.85;
 }
 

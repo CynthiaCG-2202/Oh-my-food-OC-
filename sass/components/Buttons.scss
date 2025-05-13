@@ -1,25 +1,29 @@
 .btn-nav {
-        margin: 15px;
+    margin: 15px;
 
-        .explore {
-            box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
-            background: linear-gradient(180deg, var(--main-color), var(--second-color));
-            border: none;
-            width: 218px;
-            height: 50px;
-            color: white;
-            font-size: 16px;
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 300ms ease, background-color 300ms ease;
+    .explore {
+        box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(180deg, var(--main-color), var(--second-color));
+        border: none;
+        width: 218px;
+        height: 50px;
+        color: white;
+        font-size: 16px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 300ms ease, background-color 300ms ease;
 
-            &:hover {
-                opacity: 0.85;
-            }
+        &:hover {
+            opacity: 0.85;
         }
     }
+}
+
+.btn-menu {
+    display: flex;
+    justify-content: center;
 
     .btn-command {
         box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.089);
@@ -33,9 +37,10 @@
         color: white;
         border-radius: 30px;
         transition: opacity 300ms ease, background-color 300ms ease;
-    
+
         &:hover {
             opacity: 0.85;
         }
-    
+
     }
+}

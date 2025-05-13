@@ -1,0 +1,59 @@
+.end-page-OMF {
+    background-color: #353535;
+    padding: 20px;
+
+    .txt-footer {
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        .title-footer {
+            font-family: Shrikhand;
+            font-size: 18px;
+        }
+
+        ul {
+            padding: 0px;
+        }
+
+        li {
+            list-style-type: none;
+            font-weight: 300;
+            margin: 5px;
+        }
+
+        .list-icon {
+            font-weight: 500;
+
+            .fa-utensils {
+                color: white;
+                width: 11px;
+                height: 13px;
+                margin-right: 15px;
+            }
+
+            .fa-handshake-angle {
+                color: white;
+                width: 11px;
+                height: 13px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .end-page-OMF {
+
+        .txt-footer {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            ul {
+                display: flex;
+            }
+        }
+    }
+}

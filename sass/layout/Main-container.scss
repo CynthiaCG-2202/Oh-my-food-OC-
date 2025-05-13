@@ -1,0 +1,41 @@
+.main-container {
+    width: 100%;
+    opacity: 0;
+    animation: showContent 0.5s ease-in 3s forwards;
+}
+
+@keyframes showContent {
+    to {
+        opacity: 1;
+    }
+}
+
+.main-container-restaurants{
+
+    width: 100%;
+
+    .headOMF {
+
+        .logo-and-arrow-OMFR {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+            .arrow-OMF {
+                position: absolute;
+                left: 20px;
+                display: flex;
+                align-items: center;
+
+                i {
+                    color: black;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

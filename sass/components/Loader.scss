@@ -16,11 +16,16 @@
 .loader {
     height: 4px;
     width: 130px;
-    --c: no-repeat linear-gradient(#6100ee 0 0);
-    background: var(--c), var(--c), #d7b8fc;
+
+    --loader-color: linear-gradient(to right, #6100ee, #6100ee);
+
+    background-image: var(--loader-color), var(--loader-color);
+    background-repeat: no-repeat, no-repeat;
+    background-color: #d7b8fc;
     background-size: 60% 100%;
     animation: l16 3s infinite;
 }
+
 
 @keyframes l16 {
     0% {

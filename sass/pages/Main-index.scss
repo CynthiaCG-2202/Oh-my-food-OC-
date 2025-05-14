@@ -1,0 +1,11 @@
+.main-container {
+    width: 100%;
+    opacity: 0;
+    animation: showContent 0.5s ease-in 3s forwards;
+}
+
+@keyframes showContent {
+    to {
+        opacity: 1;
+    }
+}

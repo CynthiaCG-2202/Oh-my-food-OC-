@@ -1,14 +1,3 @@
-.main-container {
-  width: 100%;
-  opacity: 0;
-  animation: showContent 0.5s ease-in 3s forwards;
-}
-
-@keyframes showContent {
-  to {
-    opacity: 1;
-  }
-}
 .main-container-restaurants {
   width: 100%;
 }
@@ -30,4 +19,4 @@
 .main-container-restaurants .headOMF .logo-and-arrow-OMFR .arrow-OMF i {
   color: black;
   font-size: 20px;
-}/*# sourceMappingURL=Main-container.css.map */
+}/*# sourceMappingURL=Container-Restaurant.css.map */

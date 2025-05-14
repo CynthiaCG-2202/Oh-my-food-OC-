@@ -1,14 +1,17 @@
 @import 'base/Typography';
 @import 'base/Root-colors';
 
-@import 'layout/Main-container';
 @import 'layout/Header';
-@import 'layout/Navigation';
-@import 'layout/Main-wrap';
-@import 'layout/Section-list';
 @import 'layout/Body';
 @import 'layout/Footer';
-@import 'layout/Section-menu';
+
+@import 'pages/Container-Restaurant';
+@import 'pages/Main-Index';
+@import 'pages/Section-menu';
+@import 'pages/location-index';
+@import 'pages/steps-index';
+@import 'pages/Navigation';
+@import 'pages/Section-list';
 
 @import 'components/Buttons';
 @import 'components/Loader';

@@ -16,20 +16,6 @@
   padding: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.headOMF .location {
-  display: flex;
-  justify-content: center;
-  background-color: #efecec;
-  padding: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 1px;
-  font-size: 16px;
-  color: #353535;
-}
-.headOMF .location .fa-location-dot {
-  margin-right: 5px;
-  color: #353535;
-}
 
 .logo-and-arrow-OMFR {
   background-color: white;
@@ -219,6 +205,16 @@ body {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .all-section-menu .all-menu .content-menu .section-menu .menu-and-check {
   position: relative;
   background: white;
@@ -230,6 +226,38 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-1 {
+  animation-delay: 0.1s;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-2 {
+  animation-delay: 0.3s;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-3 {
+  animation-delay: 0.5s;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-4 {
+  animation-delay: 0.7s;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-5 {
+  animation-delay: 0.9s;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-6 {
+  animation-delay: 1.1s;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-7 {
+  animation-delay: 1.3s;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-8 {
+  animation-delay: 1.5s;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-9 {
+  animation-delay: 1.7s;
+}
+.all-section-menu .all-menu .content-menu .section-menu .menu-and-check.delay-10 {
+  animation-delay: 1.9s;
 }
 .all-section-menu .all-menu .content-menu .section-menu .menu-and-check .content-section-menu {
   display: flex;

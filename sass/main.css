@@ -52,6 +52,7 @@ body {
 .end-page-OMF {
   background-color: #353535;
   padding: 20px;
+  margin-top: -35px;
 }
 .end-page-OMF .txt-footer {
   display: flex;
